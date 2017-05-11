@@ -3,7 +3,29 @@ import { Client } from './client';
 
 export class Base {
 
-    private _clientBase: Client [] = [];
+    private _clientBase: Client [] = [
+        // only for TEST
+        new Client('test', 'test', 'test', 'test', 1),
+        new Client('test', 'test', 'test', 'test', 2),
+        new Client('test', 'test', 'test', 'test', 3),
+        new Client('test', 'test', 'test', 'test', 4),
+        new Client('test', 'test', 'test', 'test', 5),
+        new Client('test', 'test', 'test', 'test', 6),
+        new Client('test', 'test', 'test', 'test', 7),
+        new Client('test', 'test', 'test', 'test', 8),
+        new Client('test', 'test', 'test', 'test', 9),
+        new Client('test', 'test', 'test', 'test', 10),
+        new Client('test', 'test', 'test', 'test', 11),
+        new Client('test', 'test', 'test', 'test', 12),
+        new Client('test', 'test', 'test', 'test', 13),
+        new Client('test', 'test', 'test', 'test', 14),
+        new Client('test', 'test', 'test', 'test', 15),
+        new Client('test', 'test', 'test', 'test', 16),
+        new Client('test', 'test', 'test', 'test', 17),
+        new Client('test', 'test', 'test', 'test', 18),
+        new Client('test', 'test', 'test', 'test', 19),
+        new Client('test', 'test', 'test', 'test', 20)
+    ];
 
      public static toJson(base: Base) {
         return {
