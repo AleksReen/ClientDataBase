@@ -1,0 +1,61 @@
+.app-search__conteiner {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-search__button-conteiner {
+    display: block;
+}
+
+.app-search__lable {
+    margin-bottom: 0px;
+    margin-right: 10px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.app-search__input {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.app-search__button {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.app-search__button_green {
+    background-color: green;
+}
+
+.app-search__button_green:hover {
+    background-color: #4a8e4a;
+}
+
+.app-search__button_green:active {
+    background-color: #2f5e2f;
+}
+
+.app-search__button_blue {
+    background-color: #006dcc;
+}
+
+.app-search__button_blue:hover {
+    background-color: #0088cc;
+}
+
+.app-search__button_blue:active {
+    background-color: #0044cc;
+}

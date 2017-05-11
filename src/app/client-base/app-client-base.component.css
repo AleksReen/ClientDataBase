@@ -1,0 +1,21 @@
+.app-client-base__conteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.app-client-base__form-conteiner {
+    margin: 10px 10px 10px 10px;
+    border: 3px solid #1976d2;
+    border-radius: 5px;
+    flex-grow: 0.5;
+}
+
+.app-client-base__table-conteiner {
+    margin: 10px 10px 10px 10px;
+    border: 3px solid #1976d2;
+    border-radius: 5px;
+    flex-grow: 1.5;
+}

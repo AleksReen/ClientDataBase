@@ -1,0 +1,13 @@
+<div class="app-search__conteiner">
+
+    <label class="app-search__lable" for="search">Search</label>
+    <input id="search" class="app-search__input" type="text" name="search" value="" [(ngModel)]="searchName">
+    <div class="app-search__button-conteiner">
+        <button class="app-search__button app-search__button_green" (click)="search()">
+                <span class="glyphicon glyphicon-search"></span> 
+                 Search</button>
+        <button class="app-search__button app-search__button_blue" *ngIf="searchState == 'search'" (click)="returnBase()">
+                 <span class="glyphicon glyphicon-repeat"></span>  
+                 Return</button>
+    </div>
+</div>

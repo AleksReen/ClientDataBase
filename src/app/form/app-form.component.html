@@ -1,0 +1,16 @@
+<div class="app-form__main-conteiner">
+    
+
+<div class="app-form__continer-client" *ngIf="toggleForm == 'default'">
+
+    <app-form-create (clientFormCreate)="createClient($event)"></app-form-create>
+
+</div>
+
+<div class="app-form__continer-edite" *ngIf="toggleForm == 'edite'">
+
+    <app-form-update (updatesClientFormUpdate)="updateClient($event)" [(editeClientForm)]="editeClientForm" (toglleOff)="finishEdite($event)"> </app-form-update>
+
+</div>
+
+</div>

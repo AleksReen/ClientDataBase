@@ -1,0 +1,24 @@
+<div class="app-form-create__form">
+    <h2 class="app-form-create__form-name">Form New Client</h2>
+    <label class="app-form-create__form-lable" for="name">Name</label>
+    <input class="app-form-create__form-input" id="name" [class.app-form-create__form-input_inValid]="inValid" [class.app-form-create__form-input_valid]="valid" type="text" name="name" value="" [(ngModel)]="name">
+    <div class="app-form-create__form-attention" [class.app-form-create__form-attention_hidden]="hiddenAttention" [class.app-form-create__form-attention_visible]="showAttention">*required field</div>
+    <br>
+    <label class="app-form-create__form-lable" for="phone">Phone</label>
+    <input class="app-form-create__form-input" id="phone" type="text" name="phone" value="" [(ngModel)]="phone">
+    <br>
+    <label class="app-form-create__form-lable" for="address">Address</label>
+    <input class="app-form-create__form-input" id="address" type="text" name="address" value="" [(ngModel)]="address">
+    <br>
+    <label class="app-form-create__form-lable" for="email">Email</label>
+    <input class="app-form-create__form-input" id="email" type="text" name="email" value="" [(ngModel)]="email">
+    <br>
+    <div class="app-form-create__forma-button-conteiner">
+        <button class="app-form-create__form-button app-form-create__form-button_green" (click)="createClient()">
+                 <span class="glyphicon glyphicon-ok"></span>
+                 Create Client</button>
+        <button class="app-form-create__form-button app-form-create__form-button_red" (click)="clearForm()">
+                <span class= "glyphicon glyphicon-remove"></span>
+                Clear Form</button>
+    </div>
+</div>

@@ -1,47 +1,26 @@
 import { Injectable } from '@angular/core';
-import { Init } from '../app/init-database';
+import { Base } from './base';
 
 @Injectable()
-export class DataService extends Init {
+export class DataService {
 
-  constructor() {
-    super();
-    console.log('Data service ОК!');
-    this.load();
-   }
+private KEY = 'ClientDataBase';
 
-   public getDatas(){
-     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
-     return dB;
-   }
+constructor() {}
 
-   public addClient (newClient){
-      let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
-      dB.push(newClient);
-      localStorage.setItem('ClientDataBase', JSON.stringify(dB));
-      console.log('service ADD');
-   }
-
-   public deleteClient(deleteName: string) {
-     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
-     dB = dB.filter(client => client.name != deleteName);
-     localStorage.setItem('ClientDataBase', JSON.stringify(dB));
-     console.log('service DELETE');
+    public setClientBase(tb: Base): void {
+    localStorage.setItem(this.KEY, JSON.stringify(Base.toJson(tb)));
   }
 
-   public updateClient(oldName, oldAddress, oldPhone, oldEmail, name, address, phone, email) {
-     let dB = JSON.parse(localStorage.getItem('ClientDataBase'));
+ public getClientBase ():Base  {
 
-      for (let i = 0; i < dB.length; i++) {
-         if (dB[i].name === oldName && dB[i].address === oldAddress && dB[i].phone === oldPhone && dB[i].email === oldEmail ) {
-           dB[i].name = name;
-           dB[i].address = address;
-           dB[i].phone = phone;
-           dB[i].email = email;
-          }
-       }
-     localStorage.setItem('ClientDataBase', JSON.stringify(dB));
-     console.log('service UDATE');
-   }
-
+      let data = localStorage.getItem(this.KEY)
+      if(data !== null) {
+        return Base.fromJson(JSON.parse(data));
+      } else {
+        let newBase: Base = new Base ();
+        localStorage.setItem(this.KEY, JSON.stringify(Base.toJson(newBase)));
+        return newBase;
+    }
+  }
 }

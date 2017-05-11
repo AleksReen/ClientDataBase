@@ -1,0 +1,21 @@
+.app-footer__conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../../assets/angular2-footer.png");
+    background-size: contain;
+}
+
+.app-footer__author {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 50px;
+}
+
+.app-footer__author-maintext {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+<div class="app-client-base__conteiner">
+
+    <div class="app-client-base__form-conteiner">    
+        <app-form (createClientForm)="addClientBase($event)" [(editeClientForm)]="editeClient" [(toggleForm)]="toggleFormState" (updatesClientForm)="updateClientBase($event)" (toglleOff)="toggleForm($event)"></app-form>
+    </div>
+    
+    <div class="app-client-base__table-conteiner">
+        <app-table  [(listClients)]="clientBase" (deleteClientTable)="deleteClientBase($event)" (editeClientTable)="editeClientBase($event)"></app-table>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.app__main-conteiner {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.app__app-header-conteiner{
+    display: block;
+}
+.app__app-client-base-conteiner{
+    display: block;
+}
+.app__app-footer-conteiner{
+    display: block;
+}

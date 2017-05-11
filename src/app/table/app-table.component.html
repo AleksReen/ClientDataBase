@@ -1,0 +1,22 @@
+<div class="app-table__main-conteiner">
+
+    <h2 class="app-table__maintext" *ngIf="searchState == 'default'">Clients Data Base</h2>
+    <h2 class="app-table__maintext" *ngIf="searchState == 'search'">Result of Search</h2>
+    <br>
+
+    <div class="app-table__search-conteiner">
+        <app-search (emitSearchName)="searchClient($event)" (emitReturnBase)="returnBase($event)"> </app-search>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="app-table__table-conteiner">
+        <div class="app-table__table-data-base-conteiner" *ngIf="searchState == 'default'">
+            <app-table-data-base [(listClients)]="listClients" (deleteClientId)="deleteClient($event)" (editeClientId)="editeClient($event)"> </app-table-data-base>
+        </div>
+
+        <div class="app-table__table-search-conteiner" *ngIf="searchState == 'search'">
+            <app-table-search [(searchClientList)]="searchClientList" (deleteClientId)="deleteClient($event)" (editeClientId)="editeClient($event)"> </app-table-search>
+        </div>
+    </div>
