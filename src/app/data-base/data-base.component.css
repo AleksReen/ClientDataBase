@@ -1,0 +1,19 @@
+.data-base {
+    width: 700px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.data-base-tr,
+.data-base-td {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.conteiner-new-client {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
