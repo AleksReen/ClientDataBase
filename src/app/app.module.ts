@@ -19,6 +19,9 @@ import { FormUpdateComponent } from './form-update/app-form-update.component';
 import { TableDataBaseComponent } from './table-data-base/app-table-data-base.component';
 import { TableSearchComponent } from './table-search/app-table-search.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material';
+import {MdButtonModule, MdInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,10 @@ import { TableSearchComponent } from './table-search/app-table-search.component'
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
+    BrowserAnimationsModule,
+    MaterialModule,
+    MdButtonModule, 
+    MdInputModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,11 +1,14 @@
-.app-form__main-conteiner{
+.app-form__main-conteiner {
     display: block;
+    height: 100%;
 }
 
-.app-form__conteiner-client {
+.app-form__continer-client {
     display: block;
+    height: 100%;
 }
 
 .app-form__continer-edite {
     display: block;
+    height: 100%;
 }

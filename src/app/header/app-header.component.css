@@ -1,7 +1,7 @@
 .app-header__conteiner {
     display: flex;
     justify-content: center;
-    background-color: #1976d2;
+    background-color: #1976D2
 }
 
 .app-header__logo {
