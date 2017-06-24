@@ -6,12 +6,14 @@
     align-items: stretch;
 }
 
-.app__app-header-conteiner{
+.app__app-header-conteiner {
     display: block;
 }
-.app__app-client-base-conteiner{
+
+.app__app-client-base-conteiner {
     display: block;
 }
-.app__app-footer-conteiner{
+
+.app__app-footer-conteiner {
     display: block;
 }
