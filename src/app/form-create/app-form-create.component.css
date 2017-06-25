@@ -14,10 +14,6 @@
     display: block;
 }
 
-.app-form-create__form-lable {
-    display: inline-block;
-}
-
 .app-form-create__form-input {
     width: 250px;
     height: 30px;

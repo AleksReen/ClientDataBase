@@ -1,13 +1,20 @@
 <div class="app-search__conteiner">
 
-    <label class="app-search__lable" for="search">Search</label>
-    <input id="search" class="app-search__input" type="text" name="search" value="" [(ngModel)]="searchName">
+    <md-input-container>
+        <input color="primary" id="search" class="app-search__input" type="text" name="search" value="" [(ngModel)]="searchName" mdInput placeholder="Search">
+    </md-input-container>
+
     <div class="app-search__button-conteiner">
-        <button class="app-search__button app-search__button_green" (click)="search()">
-                <span class="glyphicon glyphicon-search"></span> 
-                 Search</button>
-        <button class="app-search__button app-search__button_blue" *ngIf="searchState == 'search'" (click)="returnBase()">
-                 <span class="glyphicon glyphicon-repeat"></span>  
-                 Return</button>
+
+        <button md-raised-button class="app-search__button app-search__button_green" (click)="search()">
+           <i class="material-icons app-search__icon ">find_in_page</i>
+                 <span>Search</span>
+            </button>
+
+        <button md-raised-button class="app-search__button app-search__button_blue" *ngIf="searchState == 'search'" (click)="returnBase()">
+           <i class="material-icons app-search__icon ">find_in_page</i>
+                 <span>Return</span>
+            </button>
+
     </div>
 </div>

@@ -44,7 +44,7 @@ import {MdButtonModule, MdInputModule} from '@angular/material';
     AlertModule.forRoot(),
     BrowserAnimationsModule,
     MaterialModule,
-    MdButtonModule, 
+    MdButtonModule,
     MdInputModule
   ],
   providers: [DataService],
