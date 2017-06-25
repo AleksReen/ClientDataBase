@@ -1,4 +1,4 @@
-<table class="app-table-data-base__table">
+<!--<table class="app-table-data-base__table">
 
     <tr>
         <th></th>
@@ -25,4 +25,37 @@
             </div>
         </td>
     </tr>
+</table>-->
+
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="app-table-data-base__table-row" *ngFor="let item of listClients" [class.app-table-data-base__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
+            <td class="app-table-data-base__button-conteiner">
+                <div class="app-table-data-base__button-edit" (click)="onEdite(item.getId)">
+                    <span class="glyphicon glyphicon-edit"></span>
+                </div>
+            </td>
+            <td class="app-table-data-base__table-data">{{item.getName}}</td>
+            <td>{{item.getPhone}}</td>
+            <td>{{item.getAddress}}</td>
+            <td>{{item.getEmail}}</td>
+            <td class="app-table-data-base__button-conteiner">
+                <div class="app-table-data-base__button-delete" (click)="onDelete(item.getId)">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
 </table>
