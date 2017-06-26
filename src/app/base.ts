@@ -5,26 +5,36 @@ export class Base {
 
     private _clientBase: Client [] = [
         // only for TEST
-        new Client('test', 'test', 'test', 'test', 1),
-        new Client('test', 'test', 'test', 'test', 2),
-        new Client('test', 'test', 'test', 'test', 3),
-        new Client('test', 'test', 'test', 'test', 4),
-        new Client('test', 'test', 'test', 'test', 5),
-        new Client('test', 'test', 'test', 'test', 6),
-        new Client('test', 'test', 'test', 'test', 7),
-        new Client('test', 'test', 'test', 'test', 8),
-        new Client('test', 'test', 'test', 'test', 9),
-        new Client('test', 'test', 'test', 'test', 10),
-        new Client('test', 'test', 'test', 'test', 11),
-        new Client('test', 'test', 'test', 'test', 12),
-        new Client('test', 'test', 'test', 'test', 13),
-        new Client('test', 'test', 'test', 'test', 14),
-        new Client('test', 'test', 'test', 'test', 15),
-        new Client('test', 'test', 'test', 'test', 16),
-        new Client('test', 'test', 'test', 'test', 17),
-        new Client('test', 'test', 'test', 'test', 18),
-        new Client('test', 'test', 'test', 'test', 19),
-        new Client('test', 'test', 'test', 'test', 20)
+        new Client(
+            'ЗАО "Полимир"', 
+            '78-58-98, +375(44)705-45-01', 
+            'Могилёв, пр-кт Димитрова 78, рампа №3', 
+            'polymir@tut.by', 
+            1),
+        new Client(
+            'ИП Алекперов К.А',
+            '+375(29)331-85-74',
+            'Могилёв, пр-кт Мира 37, оф.12',
+            'player191@rambler.ru', 
+            2),
+        new Client(
+            'ИП Коршуков В.А.', 
+            '+375(44)779-68-51', 
+            'Могилёв, Первомайска 191', 
+            'mag.Stroy@yandex.ru', 
+            3),
+        new Client(
+            'ОДО "Восток-М"', 
+            '25-78-96, +375(29)778-98-52', 
+            'Могилёв, ул.Профсоюзная, оф. 214', 
+            'vostok-m@yandex.by', 
+            4),
+        new Client(
+            'ЧУП "Иоанн-Купец"', 
+            '+375(29)331-26-46', 
+            'Горки, Комсомольская 81, м-н "Зотчий"', 
+            'vitaliy-kypec@tut.by', 
+            5)
     ];
 
      public static toJson(base: Base) {
