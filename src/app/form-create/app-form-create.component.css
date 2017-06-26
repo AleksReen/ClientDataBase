@@ -3,7 +3,7 @@
     min-width: 250px;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 20px;
@@ -43,38 +43,17 @@
     background-color: green;
 }
 
-.app-form-create__form-button_green:hover {
-    background-color: #4a8e4a;
-}
-
-.app-form-create__form-button_green:active {
-    background-color: #2f5e2f;
-}
-
 .app-form-create__form-button_red {
-    background-color: #bd362f;
+    background-color: red;
 }
 
-.app-form-create__form-button_red:hover {
-    background-color: #ee5f5b;
-}
-
-.app-form-create__form-button_red:active {
-    background-color: #802420;
-}
 
 .app-form-create__form-attention {
     font-size: 10px;
     margin-bottom: -20px;
 }
 
-.app-form-create__form-input_inValid {
-    border: 2px solid red;
-}
 
-.app-form-create__form-input_valid {
-    border: 2px solid green;
-}
 
 .app-form-create__form-attention_hidden {
     visibility: hidden;
@@ -83,8 +62,4 @@
 .app-form-create__form-attention_visible {
     visibility: visible;
     color: red;
-}
-
-.mat-input-ripple color {
-    background-color: red;
 }

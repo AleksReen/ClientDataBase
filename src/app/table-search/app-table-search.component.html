@@ -1,27 +1,30 @@
-<table class="app-table-search__table">
-    <tr>
-        <th></th>
-        <th class="app-table-search__header">Name</th>
-        <th class="app-table-search__header">Phone</th>
-        <th class="app-table-search__header">Address</th>
-        <th class="app-table-search__header">Email</th>
-        <th></th>
-    </tr>
-
-    <tr class="app-table-search__table-row" *ngFor="let item of searchClientList" [class.app-table-search__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
-        <td class="app-table-search__button-conteiner">
-            <div class="app-table-search__button-edit" (click)="onEdite(item.getId)">
-                <span class="glyphicon glyphicon-edit"></span>
-            </div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+ <tbody>
+    <tr *ngFor="let item of searchClientList" [class.app-table-search__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
+        <td>
+            <button md-raised-button class="app-table-search__button-edit" (click)="onEdite(item.getId)">
+                <i class="material-icons">autorenew</i>
+            </button>
         </td>
         <td class="app-table-search__table-data">{{item.getName}}</td>
         <td class="app-table-search__table-data">{{item.getPhone}}</td>
         <td class="app-table-search__table-data">{{item.getAddress}}</td>
         <td class="app-table-search__table-data">{{item.getEmail}}</td>
-        <td class="app-table-search__button-conteiner">
-            <div class="app-table-search__button-delete" (click)="onDelete(item.getId)">
-                <span class="glyphicon glyphicon-remove"></span>
-            </div>
+        <td>
+             <button md-raised-button class="app-table-search__button-delete" (click)="onDelete(item.getId)">
+                <i class="material-icons">delete_forever</i>
+            </button>
         </td>
     </tr>
+   </tbody> 
 </table>

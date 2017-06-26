@@ -1,24 +1,38 @@
 <div class="app-form-update__form">
     <h2 class="app-form-update__form-name">Form Update Client</h2>
-    <label class="app-form-update__form-lable" for="name">Name</label>
-    <input class="app-form-update__form-input" id="name" #name type="text" name="name" [value]="editeClientForm.getName" [class.app-form-update__form-input_inValid]="inValid" [class.app-form-update__form-input_valid]="valid">
+    
+    <md-input-container>
+        <input color="primary" class="app-form-update__form-input" id="name" #name type="text" name="name" [value]="editeClientForm.getName" mdInput placeholder="Name">
+    </md-input-container>
+    
     <div class="app-form-update__form-attention" [class.app-form-update__form-attention_hidden]="hiddenAttention" [class.app-form-update__form-attention_visible]="showAttention">*required field</div>
     <br>
-    <label class="app-form-update__form-lable" for="phone">Phone</label>
-    <input class="app-form-update__form-input" id="phone" #phone type="text" name="phone" [value]="editeClientForm.getPhone">
+    
+     <md-input-container>
+        <input color="primary" class="app-form-update__form-input" id="phone" #phone type="text" name="phone" [value]="editeClientForm.getPhone" mdInput placeholder="Phone">
+    </md-input-container>
+
     <br>
-    <label class="app-form-update__form-lable" for="address">Address</label>
-    <input class="app-form-update__form-input" id="address" #address type="text" name="address" [value]="editeClientForm.getAddress">
+    
+     <md-input-container>
+        <input color="primary" class="app-form-update__form-input" id="address" #address type="text" name="address" [value]="editeClientForm.getAddress" mdInput placeholder="Address">
+    </md-input-container>
     <br>
-    <label class="app-form-update__form-lable" for="email">Email</label>
-    <input class="app-form-update__form-input" id="email" #email type="text" name="email" [value]="editeClientForm.getEmail">
+    
+     <md-input-container>
+        <input color="primary" class="app-form-update__form-input" id="email" #email type="text" name="email" [value]="editeClientForm.getEmail" mdInput placeholder="Email">
+    </md-input-container>
     <br>
     <div>
-        <button class="app-form-update__form-button app-form-update__form-button_orange" (click)="updateClient(name.value, phone.value, address.value, email.value)">
-                 <span class= " glyphicon glyphicon-retweet"></span>
-                 Update Client</button>
-        <button class="app-form-update__form-button app-form-update__form-button_blue" (click)="finishEdite()"> 
-                 <span class= "glyphicon glyphicon-off"></span>
-                Finish editing</button>
+
+        <button md-raised-button class="app-form-update__form-button app-form-update__form-button_orange" (click)="updateClient(name.value, phone.value, address.value, email.value)">
+           <i class="material-icons">check_circle</i>
+                 <span>Update</span>
+            </button>
+
+        <button md-raised-button class="app-form-update__form-button app-form-update__form-button_blue" (click)="finishEdite()">
+            <i class="material-icons">delete_forever</i>
+                 <span>Finish</span>
+            </button>
     </div>
 </div>

@@ -1,8 +1,9 @@
 .app-table__main-conteiner {
     display: flex;
     min-width: 250px;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;

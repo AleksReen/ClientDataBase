@@ -1,19 +1,19 @@
 .app-form-update__form {
     display: flex;
     min-width: 250px;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 .app-form-update__form-name {
     display: block;
 }
 
-.app-form-update__form-lable {
-    display: inline-block;
-}
 
 .app-form-update__form-input {
     width: 250px;
@@ -34,7 +34,6 @@
     margin: 10px;
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
     color: white;
     border: none;
     outline: none;
@@ -45,24 +44,8 @@
     background-color: #f89406;
 }
 
-.app-form-update__form-button_orange:hover {
-    background-color: #faa732;
-}
-
-.app-form-update__form-button_orange:active {
-    background-color: #ad6704;
-}
-
 .app-form-update__form-button_blue {
     background-color: #006dcc;
-}
-
-.app-form-update__form-button_blue:hover {
-    background-color: #0088cc;
-}
-
-.app-form-update__form-button_blue:active {
-    background-color: #0044cc;
 }
 
 .app-form-update__form-attention {
@@ -70,13 +53,7 @@
     margin-bottom: -20px;
 }
 
-.app-form-update__form-input_inValid {
-    border: 2px solid red;
-}
 
-.app-form-update__form-input_valid {
-    border: 2px solid green;
-}
 
 .app-form-update__form-attention_hidden {
     visibility: hidden;

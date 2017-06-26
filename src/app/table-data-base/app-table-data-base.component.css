@@ -1,79 +1,27 @@
-.app-table-data-base__table {
-    width: 95%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-.app-table-data-base__header {
-    background-color: #1976d2;
-    color: white;
-    text-align: center;
-    border: 1px solid black;
-}
 
 .app-table-data-base__table-data {
     vertical-align: middle;
     overflow-wrap: break-word;
 }
 
-.app-table-data-base__button-conteiner {
-    display: table-cell;
-    width: 30px
-}
-
-.app-table-data-base__button-conteiner:hover {
-    background-color: white;
-}
-
-.app-table-data-base__table-row:hover {
-    background-color: #1976d2;
-    color: white;
-}
-
 .app-table-data-base__table-row_selected {
     border: 3px solid #1976d2
 }
 
-.app-table-data-base__button-edit {
-    height: 30px;
+.app-table-data-base__button-edit{
+    min-width: 30px;
     line-height: 30px;
-    width: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    border-radius: 5px;
-    color: #f89406;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    height: 30px;
+    padding: 0px;
+    background-color: #f89406;
+    color: white;
 }
-
-.app-table-data-base__button-edit:hover {
-    border: 1px solid #faa732
-}
-
-.app-table-data-base__button-edit:active {
-    border: 2px solid #ad6704;
-}
-
+  
 .app-table-data-base__button-delete {
-    height: 30px;
+    min-width: 30px;
     line-height: 30px;
-    width: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    border-radius: 5px;
-    color: red;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.app-table-data-base__button-delete:hover {
-    border: 1px solid red;
-}
-
-.app-table-data-base__button-delete:active {
-    border: 2px solid #b70909;
+    height: 30px;
+    padding: 0px;
+    background-color: red;
+    color: white;
 }

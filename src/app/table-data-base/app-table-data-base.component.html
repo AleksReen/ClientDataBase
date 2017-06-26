@@ -1,35 +1,4 @@
-<!--<table class="app-table-data-base__table">
-
-    <tr>
-        <th></th>
-        <th class="app-table-data-base__header">Name</th>
-        <th class="app-table-data-base__header">Phone</th>
-        <th class="app-table-data-base__header">Address</th>
-        <th class="app-table-data-base__header">Email</th>
-        <th></th>
-    </tr>
-
-    <tr class="app-table-data-base__table-row" *ngFor="let item of listClients" [class.app-table-data-base__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
-        <td class="app-table-data-base__button-conteiner">
-            <div class="app-table-data-base__button-edit" (click)="onEdite(item.getId)">
-                <span class="glyphicon glyphicon-edit"></span>
-            </div>
-        </td>
-        <td class="app-table-data-base__table-data">{{item.getName}}</td>
-        <td class="app-table-data-base__table-data">{{item.getPhone}}</td>
-        <td class="app-table-data-base__table-data">{{item.getAddress}}</td>
-        <td class="app-table-data-base__table-data">{{item.getEmail}}</td>
-        <td class="app-table-data-base__button-conteiner">
-            <div class="app-table-data-base__button-delete" (click)="onDelete(item.getId)">
-                <span class="glyphicon glyphicon-remove"></span>
-            </div>
-        </td>
-    </tr>
-</table>-->
-
-
-
-<table class="table table-hover">
+<table class="table table-hover table-striped">
     <thead>
         <tr>
             <th></th>
@@ -41,20 +10,20 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="app-table-data-base__table-row" *ngFor="let item of listClients" [class.app-table-data-base__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
-            <td class="app-table-data-base__button-conteiner">
-                <div class="app-table-data-base__button-edit" (click)="onEdite(item.getId)">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </div>
+        <tr *ngFor="let item of listClients" [class.app-table-data-base__table-row_selected]="item === selectedClient" (click)="onSelect(item)">
+            <td>
+                <button md-raised-button class="app-table-data-base__button-edit" (click)="onEdite(item.getId)">
+                    <i class="material-icons">autorenew</i>
+                </button>
             </td>
             <td class="app-table-data-base__table-data">{{item.getName}}</td>
-            <td>{{item.getPhone}}</td>
-            <td>{{item.getAddress}}</td>
-            <td>{{item.getEmail}}</td>
-            <td class="app-table-data-base__button-conteiner">
-                <div class="app-table-data-base__button-delete" (click)="onDelete(item.getId)">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </div>
+            <td class="app-table-data-base__table-data">{{item.getPhone}}</td>
+            <td class="app-table-data-base__table-data">{{item.getAddress}}</td>
+            <td class="app-table-data-base__table-data">{{item.getEmail}}</td>
+            <td>
+                <button md-raised-button class="app-table-data-base__button-delete" (click)="onDelete(item.getId)">
+                    <i class="material-icons">delete_forever</i>
+                </button>
             </td>
         </tr>
     </tbody>
